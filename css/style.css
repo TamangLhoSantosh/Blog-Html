@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    background-color:  #0a0a0a;
+    height: 80px;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+label{
+    color: aliceblue;
+    font-size: 3rem;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin: 1rem;
+}
+
+nav ul li{ 
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 1.5rem;
+}
+
+nav ul li a{
+    color: antiquewhite;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+ a:hover{
+    background: antiquewhite;
+    color: #0a0a0a;
+    transition: .3s;
+
+}
