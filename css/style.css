@@ -12,41 +12,134 @@ body{
 
 nav{
     background-color:  #0a0a0a;
-    height: 80px;
+    height: 65px;
     width: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
-label{
-    color: aliceblue;
+nav label{
+    color: #b1b1b1;
     font-size: 3rem;
-    line-height: 80px;
-    padding: 0 100px;
+    line-height: 65px;
+    padding: 0 20px;
     font-weight: bold;
 }
 
 nav ul{
     float: right;
-    margin: 1rem;
+    margin: 0px 1rem;
 }
 
 nav ul li{ 
     display: inline-block;
-    line-height: 80px;
-    margin: 0px 1.5rem;
+    line-height: 65px;
 }
 
 nav ul li a{
-    color: antiquewhite;
+    color: #fff;
     font-size: 1.5rem;
     text-transform: uppercase;
     padding: 7px 13px;
     border-radius: 3px;
+    transition: background-color 0.5s;
 }
 
- a:hover{
+nav ul li a.active{
+    background: #ffffff;
+    color: #0a0a0a;
+}
+
+nav ul li a:hover{
     background: antiquewhite;
     color: #0a0a0a;
-    transition: .3s;
+}
 
+.para{
+    float: left;
+    margin: 10rem;
+}
+
+H1{
+    padding: 1rem;
+}
+
+h3{
+    padding: .5rem;
+}
+
+.contactme{
+    background-color: #0a0a0a;
+    color: antiquewhite;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    transition: background-color 0.5s;
+}
+
+.contactme:hover {
+    background-color: antiquewhite;
+    color: #0a0a0a;
+}
+
+.contactme:active {
+    background-color: rgb(139, 76, 76);
+}
+
+img{
+    width: 500px;
+    float: right;
+    margin:  4rem 6rem;
+}
+
+@media (max-width: 1400px){
+    .para{
+        margin: 6rem;
+    }
+
+    img{
+        margin: 4rem;
+    }
+}
+
+
+@media (max-width: 1200px){
+    .para{
+        margin: 3rem;
+    }
+
+    img{
+        margin: 3rem;
+    }
+}
+
+@media (max-width: 1000px){
+    .para{
+        margin: 1rem;
+    }
+
+    img{
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 850px){
+    img{
+        width: 400px;
+    }
+}
+
+@media (max-width: 750px){
+    nav ul li a{
+        font-size: 1rem;
+    }
+    img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 600px){
+    label.logo{
+        font-size: 2rem;
+    }
 }
